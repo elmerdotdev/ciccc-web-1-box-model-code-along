@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  width: 500px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: yellow;
+  position: sticky;
+  top: 10px;
+  width: 100%;
+  z-index: 99999;
+}
+
+menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.boxes {
+  width: 300px;
+  margin: auto;
+  background-color: cyan;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  color: white;
+  margin: auto;
+}
+
+.box1 {
+  background-color: red;
+  padding: 20px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: black;
+  border-top-color: orange;
+  border-right-color: pink;
+  border-bottom-color: gray;
+}
+
+.box2 {
+  background-color: green;
+  /* position : absolute; */
+  left: 0px;
+}
+
+.box3 {
+  background-color: blue;
+}
+
+.box4 {
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+}
+
+.text_input {
+  width: 300px;
+  padding: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+}
+
+.playground {
+  width: 300px;
+  height: 300px;
+  background-color: yellow;
+  margin: 20px auto;
+  position: relative;
+  z-index: 3;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  position: absolute; /* relies on the relative parent */
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.square2 {
+  width: 80px;
+  height: 80px;
+  background-color: blue;
+  position: relative; /* relative to its current pos */
+  right: 100px;
+}
+
+.btn_call {
+  position: fixed; /* relies on the viewport */
+  bottom: 0px;
+  right: 20px;
+  z-index: 200;
+}
+
+.cookie_banner {
+  width: 100%;
+  padding: 5px;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  color: white;
+  z-index: 100;
+}
+
+.buy_btn_wrapper {
+  position: sticky;
+  top: 50px;
+  z-index: 5;
+}
